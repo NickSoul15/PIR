@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <link rel="stylesheet" href="CSS\condominio.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <img src="CSS\Imagenes\logo.jpg">
+                <h2 class="nombrecompañia">Universal</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Contratar</a></li>
+            <li><a href="nosotros.html">Acerca de</a></li>
+            <li><a href="login.html">Iniciar sesion</a></li>
+        </ul>
+ 
+    </header>
+
+    <h1 class="titulo">Contratación de servicios</h1>
+
+    <form class="contratar">
+        <label for="servicios">Elige el tipo de servicio:</label>
+        <select id="servicios" name="servicios">
+          <option value="Administrativos" selected>Administrativos</option>
+          <option value="Mantenimiento">Mantenimiento</option>
+          <option value="Vigilancia">Vigilancia</option>
+          <option value="Convivencia">Convivencia</option>
+          <option value="Opcionales">Opcionales</option>
+        </select>
+        <br><br>
+        <label for="condominio">Elige el tipo de condominio</label>
+        <select id="condominio" name="condominio">
+          <option value="Vertical" selected>Vertical</option>
+          <option value="Horizontal">Horizontal</option>
+          <option value="Mixto">Mixto</option>
+        </select>
+        <br><br>
+        <p>¿Ya tiene una cuenta?</p>
+        <input type="checkbox" id="respuesta1" name="si" value="si">
+        <label for="respuesta1"> Si ya tengo cuenta</label><br>
+        <input type="checkbox" id="respuesta2" name="no" value="no">
+        <label for="respuesta2"> No tengo cuenta</label><br>
+        <br><br>
+        <label>Describa su servicio:</label>
+        <br><br>
+        <textarea name="message" rows="10" cols="30">
+        </textarea>
+        <br><br>
+        <input type="button" onclick="alert('Datos enviados')" value="Enviar">
+
+      </form>
+
+
+
+</body>
+</html>

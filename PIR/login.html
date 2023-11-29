@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS\style.css">
+</head>
+<body>
+    <div class="formulario">
+    <form action="login_registrar.php" method="post">
+        <h2>Iniciar sesion</h2>
+        <input class="campos" type="text" placeholder=" &#128273; Nombre" name="usuario" required><br><br>
+        <input class="campos" type="password" placeholder="&#128274; Contraseña" name="pass" required><br><br>
+        <select name="rol"><br><br>
+            <option value="0" style="display:none;"><label>Seleccionar</label></option>
+            <option value="Usuario">Usuario</option>
+            <option value="Admin">Administrador</option>
+            </select><br><br>
+        <input class="btn" type="submit" value="Ingresar" name="btningresar">
+        <br>
+        <a href="registro.html">Registrarse</a><br><br>
+        <a href="index.html">Inicio</a><br><br>
+        <a href="recuperar.php">Recuperar Contraseña</a><br><br>
+    </form>
+    </div>
+</body>
+</html>
+

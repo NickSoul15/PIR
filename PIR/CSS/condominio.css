@@ -1,0 +1,257 @@
+body{
+    background-image: url(condominio.jpg);
+    background-size: cover;
+    
+    color: white;
+
+}
+
+h2{
+    color: aqua;
+}
+
+.nombrecompañia {
+    color: navy;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  header{
+    display: flex;
+    background-image: url("header.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+/*Estilos del logo */
+.logo{
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img{
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  .menu{
+    list-style: none;
+    padding: 0;
+    background-color: deepskyblue;
+    margin: auto;
+    
+  
+
+  }
+
+  .menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+  }
+
+  .menu li{
+    display: inline-block;
+    text-align: center;
+
+  }
+
+  .menu li a:hover{
+    background-color: navy;
+  }
+
+  .descripcion{
+    background-color:darkseagreen;
+    border: 2px solid #000;
+    border-color: azure;
+    border-radius: 50px;
+    color: black;
+    margin: 50px 20%;
+    text-align: center;
+    width: 60%;
+    padding: 30px;
+  
+  }
+
+article p{
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+article h1{
+  font-size: 50px;
+}
+
+.mision{
+  background-color: beige;
+  border: 2px solid #000;
+  border-color: azure;
+  border-radius: 50px;
+  color: black;
+  margin: 50px 20%;
+  text-align: center;
+  width: 60%;
+  padding: 30px;
+}
+
+.filosofia{
+  font-size: 30px;
+  font-family: cursive;
+}
+
+/* Estilos de la tarjeta del producto*/
+.header img{
+  height: 500px;
+  width: 75%;
+  margin: 20px 20px;
+  padding: 5%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.header img:hover{
+transform: scale(1.2);
+}
+
+.header h2{
+  color:navy;
+  font-size: 50px;
+}
+
+.header h4{
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.descripcion{
+  position: relative;
+}
+.descripcion p{
+  margin: 20px 30px;
+  font-size: 20px;
+  text-align: justify;
+  font-family:Arial, Helvetica, sans-serif
+  
+}
+
+.conteiner{
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  height: auto;
+  padding: 0px, 200px;
+  margin: 20px 20px 20px 20px;
+
+}
+
+.card{
+  display:inline;
+  width: 600px;
+  height: auto;
+  background-color: cornflowerblue;
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px 2px rgb(0,0,0);
+  margin: 20px 20px 20px 20px;
+  
+}
+
+.header{
+  border-right: 1px solid #ddd;
+}
+
+.descripcion{
+  background: #fbfbfb;
+}
+
+.header, .descripcion{
+  padding: 20px;
+  text-align: center;
+}
+
+.header a{
+  position: relative;
+  display: block;
+} 
+
+
+.titulo{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  background: #000;
+
+}
+
+.contratar{
+  padding: 60px;
+  max-width: 400px;
+  background-color: #046193;
+  margin: 0 auto;
+}
+
+ form textarea{
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: none; 
+}
+
+form button {
+	display: block;
+	background-color: #0095eb;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+}
+form button:hover{
+	background-color: #046193;
+}
+textarea {  resize: none;}
+
+
+
+
+
+/*Media query de header */
+@media (max-width:700px){
+  header{
+    flex-direction: column;
+    min-height: auto;
+  }
+  nav{
+    padding: 10px 0px;
+  }
+
+  .card{
+    display: block;
+    width: auto;
+  }
+  .header{
+    padding: 20px 20px 5px 20px ;
+    border: none;
+  }
+  .descripcion{
+    padding: 5px 20px 20px 20px;
+
+  }
+  .header h4{
+    margin: 0;
+  }
+  .conteiner{
+      flex-direction: column;
+  }
+
+
+}
